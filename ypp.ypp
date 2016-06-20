@@ -1,0 +1,13 @@
+%{
+#include "hpp.hpp"
+%}
+%defines %union { int i; string *s; }
+%token <i> num
+%token <s> id
+%%
+REPL : | REPL ex ;
+ex :
+	num	{ cout << $1 << endl; }
+	id	{ cout << $1 << endl; }
+;
+%%
