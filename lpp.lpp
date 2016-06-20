@@ -5,5 +5,9 @@
 %option yylineno
 %%
 #[^\n]*\n	{}
+[0-9]+		{yylval.i = atoi(yytext); return NUM;}
+[a-z]+		{yylval.s = new string(yytext); return ID;}
+[ \t\r\n]+	{}
+.			{}
 %%
 

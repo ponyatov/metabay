@@ -1,2 +1,7 @@
 # Input clear
 
+# i01. demo, AEXP example assignments
+fern:=5+6;
+ace:=fern*5;
+waldo:=fern+alpha/-beta^gamma;
+

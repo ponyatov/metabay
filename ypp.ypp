@@ -2,12 +2,12 @@
 #include "hpp.hpp"
 %}
 %defines %union { int i; string *s; char c; }
-%token <i> num
-%token <s> id
+%token <i> NUM
+%token <s> ID
 %%
 REPL : | REPL ex ;
 ex :
-	num	{ cout << $1 << endl; }
-	id	{ cout << $1 << endl; }
+	  NUM	{ cout << "console.log('num:"<< $1<<"');" << endl; }
+	| ID	{ cout << "console.log(' id:"<<*$1<<"');" << endl; }
 ;
 %%

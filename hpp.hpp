@@ -10,5 +10,6 @@ extern int yylineno;
 extern char* yytext;
 extern int yyparse();
 extern void yyerror(string);
+#include "ypp.tab.hpp"
 
 #endif // _H_HPP
