@@ -1,1 +1,1 @@
-@gvim -p src.src log.log ypp.ypp lpp.lpp hpp.hpp cpp.cpp
+@gvim -p src.src html.html ypp.ypp lpp.lpp hpp.hpp cpp.cpp
